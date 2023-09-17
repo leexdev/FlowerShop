@@ -1,0 +1,54 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+#header {
+    position: fixed;
+    top: 0; /* Giữ header ở trên cùng của màn hình */
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Màu nền của header */
+    z-index: 1000; /* Đảm bảo header hiển thị trên các phần khác của trang */
+    /* Các thuộc tính CSS khác cho header */
+  }
+  
+  body {
+    padding-top: 120.625px;
+  }
+  
+  .percent-off-rounded {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 48px;
+    height: 48px;
+    background: #f50101;
+    color: #ffff;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 50%;
+    padding-top: 6px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#discount-product .image {
+  transition: transform 0.3s ease; 
+}
+
+#discount-product .image:hover {
+  transform: scale(1.2);
+}
+
+.item-product {
+  max-width: 271px;
+}
+
+.price-new {
+  color: #f50101;
+}
+
+.price-old {
+  color: #696969;
+  text-decoration: line-through;
+}
