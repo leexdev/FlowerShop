@@ -32,11 +32,11 @@
     text-align: center;
 }
 
-#discount-product .image {
+#content .image {
   transition: transform 0.3s ease; 
 }
 
-#discount-product .image:hover {
+#content .image:hover {
   transform: scale(1.05);
 }
 
