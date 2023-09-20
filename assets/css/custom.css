@@ -1,5 +1,6 @@
 * {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
 #header {
@@ -37,7 +38,7 @@
 }
 
 #content .image:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .item-product {
@@ -51,4 +52,8 @@
 .price-old {
   color: #696969;
   text-decoration: line-through;
+}
+
+#footer a {
+  text-decoration: none;
 }
