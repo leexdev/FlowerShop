@@ -6,21 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FLower Shop</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/homepage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
   <div id="header" class="bg-milk">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+    <nav id="top" class="p-2">
+      <div class="container">
+        <div class="nav float-start">
+          <ul class="list-inline">
+            <li class="list-inline-item">HOTLINE: <a href="tel:1900633045">1900 797 797 </a> | <a
+                href="tel:0865 160 360">0797 797 979</a></li>
+          </ul>
+        </div>
+        <div class="nav float-end">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" title="Giỏ hàng">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="d-none d-md-inline">Giỏ hàng</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" title="Thanh toán">
+                <i class="fa-solid fa-share"></i>
+                <span class="d-none d-md-inline">Thanh toán</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav id="main-header" class="navbar d-block navbar-expand-lg bg-body-tertiary p-0">
       <div class="container">
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/logo-bloom.png" alt="Logo" style="width: 200px">
+          <img src="./assets/img/logo-bloom.png" alt="Logo" style="width: 170px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,11 +83,43 @@
             <input class="border border-3 border-top-0 border-start-0 border-end-0 bg-milk" type="search"
               placeholder="Tìm kiếm sản phẩm..." aria-label="Search" style=" outline: none;">
             <button class="btn btn-primary bg-pink shadow-none border-0" type="submit">Tìm kiếm </button>
-            <button type="button" class="btn shadow-none position-relative ms-3 bg-milk">
-              <i class="fa-solid fa-cart-shopping fs-4 text-pink"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                1
-              </span>
+            <button type="button" class="btn shadow-none position-relative ms-3 bg-milk d-none d-lg-block">
+              <div class="dropdown">
+                <a class="dropdown-header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-cart-shopping fs-4 text-pink"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    1
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-3">
+                  <table class="table-cart-flower table" style="min-width: 500px;">
+                    <tbody>
+                      <tr>
+                        <td class="text-center" style="width: 100px;">
+                          <a href="#">
+                            <img class="img-thumbnail img-cart-flower"
+                              src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                          </a>
+                        </td>
+                        <td class="align-middle text-start">
+                          <a href="#">
+                            Mặt trời của anh
+                          </a>
+                        </td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
             </button>
           </form>
         </div>
@@ -73,13 +132,13 @@
       <div id="home-slider" class="carousel slide carousel-fade mb-5">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/img/banner1.png" class="d-block w-100" alt="...">
+            <img src="./assets/img/banner1.png" class="d-block w-100 img-thumbnail" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/banner2.png" class="d-block w-100" alt="...">
+            <img src="./assets/img/banner2.png" class="d-block w-100 img-thumbnail" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/banner3.png" class="d-block w-100" alt="...">
+            <img src="./assets/img/banner3.png" class="d-block w-100 img-thumbnail" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#home-slider" data-bs-slide="prev">
@@ -97,7 +156,7 @@
         <div class="list-product row d-flex justify-content-center">
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -105,7 +164,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -113,7 +172,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -130,7 +189,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -138,7 +197,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class="text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -155,7 +214,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -163,7 +222,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -180,7 +239,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -188,7 +247,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -235,7 +294,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -243,7 +302,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -260,7 +319,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -268,7 +327,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -285,7 +344,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -293,7 +352,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -310,7 +369,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -318,7 +377,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -335,7 +394,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -343,7 +402,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -360,7 +419,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -368,7 +427,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -384,7 +443,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -392,7 +451,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -408,7 +467,7 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                  <a href="#">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
@@ -416,7 +475,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -436,7 +495,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -444,7 +503,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -461,7 +520,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -469,7 +528,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -486,7 +545,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -494,7 +553,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -511,7 +570,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -519,7 +578,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -541,7 +600,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -549,7 +608,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -566,7 +625,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -574,7 +633,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -591,7 +650,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -599,7 +658,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -616,7 +675,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -624,7 +683,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -646,7 +705,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -654,7 +713,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -671,7 +730,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -679,7 +738,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -696,7 +755,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -704,7 +763,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -721,7 +780,7 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a class="text-decoration-none" href="#">Mặt trời của anh</a>
+                    <a href="#">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
@@ -729,7 +788,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <div class="btn bg-pink d-block p-1 w-50">
-                      <a class="text-decoration-none text-white rounded" href="#">Đặt hàng</a>
+                      <a class=" text-white rounded" href="#">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -739,17 +798,19 @@
         </div>
       </div>
     </div>
+
     <div id="feedback-customer" class="mt-5 pb-5" style="background-color: #FDE7E5;">
-      <h4 class="text-center py-5 m-0">FEEDBACK TỪ KHÁCH HÀNG</h4>
-      <div id="feedback-slider" class="carousel slide pb-5">
+      <h4 class="text-center pt-5 pb-4 m-0">FEEDBACK TỪ KHÁCH HÀNG</h4>
+      <div id="feedback-slider" class="carousel slide">
         <div class="carousel-inner container">
           <div class="carousel-item active">
-            <div class="row" style="min-height: 200px;">
+            <div class="row">
               <div class="col-12 col-md-6">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Hôm trước đặt hoa ở Long An, thấy xa tưởng là không có shop nào nhận, ai ngờ may quá
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Hôm trước đặt hoa ở Long An, thấy xa tưởng là không có shop nào nhận, ai ngờ may
+                    quá
                     biết được bên này có giao hoa luôn</p>
-                  <div class="user-information d-flex h-50">
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2">
@@ -760,10 +821,11 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 mt-2 mt-md-0">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Lúc nãy đặt bó tỏ tình, rất đẹp nha các bạn! Cảm ơn các bạn đã tỉ mỉ giúp mình bó hoa
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Lúc nãy đặt bó tỏ tình, rất đẹp nha các bạn! Cảm ơn các bạn đã tỉ mỉ giúp mình bó
+                    hoa
                     lúc nãy nè. Lễ lượt mình đặt có gì inbox bạn.”</p>
-                  <div class="user-information d-flex h-50">
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2">
@@ -776,29 +838,31 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row" style="min-height: 200px;">
+            <div class="row">
               <div class="col-12 col-md-6">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Lẵng hoa khai trương vừa nhận được rất hài lòng, sẽ ủng hộ shop những lần tiếp theo.”</p>
-                  <div class="user-information d-flex h-50">
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Lẵng hoa khai trương vừa nhận được rất hài lòng, sẽ ủng hộ shop những lần tiếp
+                    theo.”</p>
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2 h-50">
-                      <p class="fw-bold m-0">Messi</p>
+                      <p class="fw-bold m-0">Leo Messi</p>
                       <p>Khách hàng</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-6 mt-2 mt-md-0">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Cảm ơn các bạn bó hoa sang trọng nè, màu tím này hợp với mẹ chồng mình thích luôn. Mẹ
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Cảm ơn các bạn bó hoa sang trọng nè, màu tím này hợp với mẹ chồng mình thích
+                    luôn. Mẹ
                     vui nên nãy giờ nhờ chụp mớ hình cùng hoa của các bạn luôn này.”</p>
-                  <div class="user-information d-flex h-50">
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2 h-50">
-                      <p class="fw-bold m-0">Ronaldo</p>
+                      <p class="fw-bold m-0">Cristiano Ronaldo</p>
                       <p>Khách hàng</p>
                     </div>
                   </div>
@@ -807,12 +871,12 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row" style="min-height: 200px;">
+            <div class="row">
               <div class="col-12 col-md-6 px-3">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Nhóm mình 5 đứa đặt bó hoa nhỏ xinh tặng con bé bạn cùng phòng kí túc xá, nó nhận
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Nhóm mình 5 đứa đặt bó hoa nhỏ xinh tặng con bé bạn cùng phòng kí túc xá, nó nhận
                     được hoa vui cười tít mắt.”</p>
-                  <div class="user-information d-flex h-50">
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2 h-50">
@@ -823,10 +887,10 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 mt-2 mt-md-0">
-                <div class="bg-white p-3 h-100">
-                  <p class="h-50">“Con bé nhà chú thích bó hướng dương lắm cháu ạ, hôm nay lễ tốt nghiệp của nó, chú
+                <div class="bg-white p-4 feedback-item">
+                  <p class="h-75 m-0">“Con bé nhà chú thích bó hướng dương lắm cháu ạ, hôm nay lễ tốt nghiệp của nó, chú
                     phải chọn hướng dương cho nó ý nghĩa, cảm ơn các cháu”</p>
-                  <div class="user-information d-flex h-50">
+                  <div class="user-information d-flex h-25">
                     <img class="rounded-circle" src="./assets/img/avatar-placeholder.png" alt="avatar"
                       style="width: 50px; height: 50px">
                     <div class="ms-2 h-50">
@@ -839,14 +903,20 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev text" type="button" data-bs-target="#feedback-slider" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden bg-danger">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#feedback-slider" data-bs-slide="prev">
+          <i class="fa-solid fa-chevron-left text-black-50"></i>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#feedback-slider" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fa-solid fa-chevron-right text-black-50"></i>
           <span class="visually-hidden">Next</span>
         </button>
+        <div class="carousel-indicators position-relative mt-3 mb-0">
+          <button type="button" data-bs-target="#feedback-slider" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#feedback-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#feedback-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
       </div>
     </div>
   </div>
@@ -861,7 +931,8 @@
               <hr class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
-                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều mẫu mã đa dạng chất lượng hoa tốt đến khách hàng
+                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều mẫu mã đa dạng chất lượng hoa tốt đến khách
+                hàng
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -912,7 +983,7 @@
                 <a href="https://www.linkedin.com/in/lee-nguyen-092194259/" class="text-white me-4">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/leexdev" class="text-white me-4">
+                <a href="https://github.com/leexdev" class="text-white ">
                   <i class="fab fa-github"></i>
                 </a>
               </section>

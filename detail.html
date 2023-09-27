@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLower Shop</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="header" class="bg-milk">
+    <nav id="top" class="p-2">
+      <div class="container">
+        <div class="nav float-start">
+          <ul class="list-inline">
+            <li class="list-inline-item">HOTLINE: <a href="tel:1900633045">1900 797 797 </a> | <a
+                href="tel:0865 160 360">0797 797 979</a></li>
+          </ul>
+        </div>
+        <div class="nav float-end">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" title="Giỏ hàng">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="d-none d-md-inline">Giỏ hàng</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" title="Thanh toán">
+                <i class="fa-solid fa-share"></i>
+                <span class="d-none d-md-inline">Thanh toán</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav id="main-header" class="navbar d-block navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logo-bloom.png" alt="Logo" style="width: 170px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu bg-milk">
+                <li><a class="dropdown-item" href="#">Hoa sinh nhật</a></li>
+                <li><a class="dropdown-item" href="#">Hoa sang trọng</a></li>
+                <li><a class="dropdown-item" href="#">Hoa sáp</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex mb-3 mb-md-0">
+            <input class="border border-3 border-top-0 border-start-0 border-end-0 bg-milk" type="search"
+              placeholder="Tìm kiếm sản phẩm..." aria-label="Search" style=" outline: none;">
+            <button class="btn btn-primary bg-pink shadow-none border-0" type="submit">Tìm kiếm </button>
+            <button type="button" class="btn shadow-none position-relative ms-3 bg-milk d-none d-lg-block">
+              <div class="dropdown">
+                <a class="dropdown-header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-cart-shopping fs-4 text-pink"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    1
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-3">
+                  <table class="table-cart-flower table" style="min-width: 500px;">
+                    <tbody>
+                      <tr>
+                        <td class="text-center" style="width: 100px;">
+                          <a href="#">
+                            <img class="img-thumbnail img-cart-flower"
+                              src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                          </a>
+                        </td>
+                        <td class="align-middle text-start">
+                          <a href="#">
+                            Mặt trời của anh
+                          </a>
+                        </td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="content" class="container my-5">
+    <div id="flower-detail">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img class="img-thumbnail" src="./assets/img/simple-800x800.jpg.png" alt="">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="flower-name mt-3 mt-md-0 fw-bold">
+            Simple
+          </h2>
+          <hr>
+          <div class="price-flower d-flex align-items-center">
+            <h5 class="price-old fw-bold m-0">
+              410,000VND
+            </h5>
+            <h5 class="price-new ms-3 fw-bold m-0">
+              370,000VND
+            </h5>
+            <span class="percent_off px-2 py-1 text-white ms-3 " style="background-color: #f00; font-size: 12px"> 10 %
+              GIẢM</span>
+          </div>
+          <hr>
+          <div class="coupon-box dropdown mb-4">
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="coupon-slider d-flex text-uppercase">
+                <div class="fw-bold text-capitalize text-dark">Khuyến mãi:</div>
+                <div class="coupon-item">giảm 50K</div>
+                <div class="coupon-item">giảm 25k</div>
+                <div class="coupon-item">giảm 10%</div>
+              </div>
+            </a>
+            <ul class="dropdown-menu end-0 p-3 overflow-auto" style="max-height: 300px;">
+              <li class="coupon-item mb-3 p-2 d-flex">
+                <div class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center">
+                  CP50
+                </div>
+                <div class="cp-other w-75 ms-2">
+                  <div class="cp-title text-uppercase">
+                    giảm 50k
+                  </div>
+                  <div class="cp-description text-dark fs-6">
+                    Giảm 50K cho đơn hàng từ 600K (Chỉ áp dụng cho khách hàng mới. Không áp dụng đồng thời cho các sản
+                    phẩm đã giảm giá).
+                  </div>
+                </div>
+              </li>
+              <li class="coupon-item mb-3 p-2 d-flex">
+                <div class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center">
+                  CP25
+                </div>
+                <div class="cp-other w-75 ms-2">
+                  <div class="cp-title text-uppercase">
+                    giảm 25k
+                  </div>
+                  <div class="cp-description text-dark fs-6">
+                    Giảm 25K cho đơn hàng từ 300K (Chỉ áp dụng cho khách hàng mới. Không áp dụng đồng thời cho các sản
+                    phẩm đã giảm giá).
+                  </div>
+                </div>
+              </li>
+              <li class="coupon-item mb-3 p-2 d-flex">
+                <div
+                  class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center text-uppercase">
+                  T6VUIVE
+                </div>
+                <div class="cp-other w-75 ms-2">
+                  <div class="cp-title text-uppercase">
+                    giảm 10%
+                  </div>
+                  <div class="cp-description text-dark fs-6">
+                    Giảm 10% cho tất cả đơn hàng khi đặt hoa vào thứ 6 hàng tuần (Không áp dụng đồng thời cho các sản
+                    phẩm đã giảm giá).
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="call-us-box d-flex align-items-center mb-4">
+            <div class="fw-bold text-capitalize me-2">Chat ngay:</div>
+            <a href="https://m.me/leex.dev">
+              <img class="rounded-circle me-2" src="./assets/img/ms.png" alt="" style="width: 36px; height: 36px;">
+            </a>
+            <a href="https://zalo.me/leex.dev">
+              <img class="rounded-circle" src="./assets/img/zalo.png" alt="" style="width: 36px; height: 36px;">
+            </a>
+          </div>
+
+          <div class="shipping-box d-flex">
+            <div class="fw-bold text-capitalize me-2">Vận chuyển:</div>
+            <p>Miễn phí giao hoa khu vực TP.HCM</p>
+          </div>
+
+          <form action="" id="form-product" class="d-flex">
+            <input type="text" name="quantity" value="1" size="2" id="input-quantity"
+              class="form-control shadow-none me-2">
+            <button type="button" class="btn btn-warning text-white fw-bold px-4 py-2 me-2">ĐẶT HÀNG</button>
+          </form>
+
+          <div class="pdp-featured py-4 row">
+            <div class="pdp-featured-item col-12 col-xl-6 row mb-3 mb-xl-0">
+              <div class="col-3 col-sm-2 col-lg-3">
+                <img src="./assets/img/60mins.png" alt="">
+              </div>
+              <div class="col-9 col-sm-10 col-lg-9">
+                <span>Giao hoa NHANH trong 60 phút</span>
+              </div>
+            </div>
+            <div class="pdp-featured-item col-12 col-xl-6 row">
+              <div class="col-3 col-sm-2 col-lg-3">
+                <img src="./assets/img/freegifts.png" alt="">
+              </div>
+              <div class="col-9 col-sm-10 col-lg-9">
+                <span>Tặng miễn phí thiệp hoặc banner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="description-flower mt-4">
+        <div class="name fw-bold mb-3">Mô tả sản phẩm</div>
+        <div class="content">
+          Bó hoa Scented Love mang tone hồng chủ đạo với 12 bông hồng tím tương tư sẽ là quà tặng hoàn hảo cho bạn gái trong dịp sinh nhật hoặc lễ tốt nghiệp.
+          <br> 
+          Bó hoa Hân hoan bao gồm:  
+          <br>
+            12 hoa hồng tím tương tư
+        </div>
+      </div>
+
+      <div id="relate-flower">
+        <h4 class="mt-5 mb-4 text-center">Sản phẩm liên quan</h4>
+        <div class="list-product row justify-content-center">
+          <div class="item-product col-md-3 col-6">
+            <div class="image position-relative mb-3">
+              <a href="#">
+                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                <span class="percent-off-rounded">9%<br>GIẢM</span>
+              </a>
+            </div>
+            <div class="content">
+              <div class="description">
+                <div class="fw-bold text-center">
+                  <a  href="#">Mặt trời của anh</a>
+                </div>
+                <div class="price text-center fw-bold p-2">
+                  <span class="price-new">300,000VND</span>
+                  <span class="price-old">330,000VND</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="btn bg-pink d-block p-1 w-50">
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-product col-md-3 col-6 mb-4">
+            <div class="image position-relative mb-3">
+              <a href="#">
+                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                <span class="percent-off-rounded">9%<br>GIẢM</span>
+              </a>
+            </div>
+            <div class="content">
+              <div class="description">
+                <div class="fw-bold text-center">
+                  <a  href="#">Mặt trời của anh</a>
+                </div>
+                <div class="price text-center fw-bold p-2">
+                  <span class="price-new">300,000VND</span>
+                  <span class="price-old">330,000VND</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="btn bg-pink d-block p-1 w-50">
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-product col-md-3 col-6 mb-4">
+            <div class="image position-relative mb-3">
+              <a href="#">
+                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                <span class="percent-off-rounded">9%<br>GIẢM</span>
+              </a>
+            </div>
+            <div class="content">
+              <div class="description">
+                <div class="fw-bold text-center">
+                  <a  href="#">Mặt trời của anh</a>
+                </div>
+                <div class="price text-center fw-bold p-2">
+                  <span class="price-new">300,000VND</span>
+                  <span class="price-old">330,000VND</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="btn bg-pink d-block p-1 w-50">
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-product col-md-3 col-6 mb-4">
+            <div class="image position-relative mb-3">
+              <a href="#">
+                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
+                <span class="percent-off-rounded">9%<br>GIẢM</span>
+              </a>
+            </div>
+            <div class="content">
+              <div class="description">
+                <div class="fw-bold text-center">
+                  <a  href="#">Mặt trời của anh</a>
+                </div>
+                <div class="price text-center fw-bold p-2">
+                  <span class="price-new">300,000VND</span>
+                  <span class="price-old">330,000VND</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="btn bg-pink d-block p-1 w-50">
+                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <footer class="text-center text-lg-start text-white" style="background-color: #252525">
+      <section class="pt-5">
+        <div class="container text-center text-md-start">
+          <div class="row ">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Bloom Flower</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều mẫu mã đa dạng chất lượng hoa tốt đến khách
+                hàng
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Sản phẩm</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="#!" class="text-white">Hoa tang lễ</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Hoa cưới</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Hoa chúc mừng</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Hoa khai trương</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Giới thiệu</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="#!" class="text-white">Giới thiệu</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Tin tức</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Hỗ trợ</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Thông tin liên hệ</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p><i class="fas fa-home mr-3"></i> District 9, HoChiMinh City, VietNam</p>
+              <p><i class="fas fa-envelope mr-3"></i> BloomFlower@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 84 797 797 979</p>
+              <section class="text-center mb-5">
+                <a href="https://facebook.com/leex.dev" class="text-white me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/leex.dev" class="text-white me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lee-nguyen-092194259/" class="text-white me-4">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/leexdev" class="text-white ">
+                  <i class="fab fa-github"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
