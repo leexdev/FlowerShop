@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FLower Shop</title>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/product.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/homepage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
@@ -199,255 +199,183 @@
     </nav>
   </div>
 
-  <div id="content" class="container my-5">
-    <div id="flower-detail">
+  <div id="content" class="container mt-5">
+    <form>
       <div class="row">
-        <div class="col-12 col-md-6">
-          <img class="img-thumbnail" src="./assets/img/simple-800x800.jpg.png" alt="">
-        </div>
-        <div class="col-12 col-md-6">
-          <h2 class="flower-name mt-3 mt-md-0 fw-bold">
-            Simple
-          </h2>
-          <hr>
-          <div class="price-flower d-flex align-items-center">
-            <h5 class="price-old fw-bold m-0">
-              410,000VND
-            </h5>
-            <h5 class="price-new ms-3 fw-bold m-0">
-              370,000VND
-            </h5>
-            <span class="percent_off px-2 py-1 text-white ms-3 " style="background-color: #f00; font-size: 12px"> 10 %
-              GIẢM</span>
-          </div>
-          <hr>
-          <div class="coupon-box dropdown mb-4">
-            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="coupon-slider d-flex text-uppercase">
-                <div class="fw-bold text-capitalize text-dark">Khuyến mãi:</div>
-                <div class="coupon-item">giảm 50K</div>
-                <div class="coupon-item">giảm 25k</div>
-                <div class="coupon-item">giảm 10%</div>
+        <div class="col-7">
+          <h5 class="m-0">Thông tin người gửi</h5>
+          <hr class="mt-2 my-4" />
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="name">Họ tên:</label>
+                <input type="text" class="form-control" id="name" name="name" />
               </div>
-            </a>
-            <ul class="dropdown-menu end-0 p-3 overflow-auto" style="max-height: 300px;">
-              <li class="coupon-item mb-3 p-2 d-flex">
-                <div class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center">
-                  CP50
-                </div>
-                <div class="cp-other w-75 ms-2">
-                  <div class="cp-title text-uppercase">
-                    giảm 50k
-                  </div>
-                  <div class="cp-description text-dark fs-6">
-                    Giảm 50K cho đơn hàng từ 600K (Chỉ áp dụng cho khách hàng mới. Không áp dụng đồng thời cho các sản
-                    phẩm đã giảm giá).
-                  </div>
-                </div>
-              </li>
-              <li class="coupon-item mb-3 p-2 d-flex">
-                <div class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center">
-                  CP25
-                </div>
-                <div class="cp-other w-75 ms-2">
-                  <div class="cp-title text-uppercase">
-                    giảm 25k
-                  </div>
-                  <div class="cp-description text-dark fs-6">
-                    Giảm 25K cho đơn hàng từ 300K (Chỉ áp dụng cho khách hàng mới. Không áp dụng đồng thời cho các sản
-                    phẩm đã giảm giá).
-                  </div>
-                </div>
-              </li>
-              <li class="coupon-item mb-3 p-2 d-flex">
-                <div
-                  class="cp-code w-25 text-white py-3 d-flex justify-content-center align-items-center text-uppercase">
-                  T6VUIVE
-                </div>
-                <div class="cp-other w-75 ms-2">
-                  <div class="cp-title text-uppercase">
-                    giảm 10%
-                  </div>
-                  <div class="cp-description text-dark fs-6">
-                    Giảm 10% cho tất cả đơn hàng khi đặt hoa vào thứ 6 hàng tuần (Không áp dụng đồng thời cho các sản
-                    phẩm đã giảm giá).
-                  </div>
-                </div>
-              </li>
-            </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="phone">Điện thoại:</label>
+                <input type="text" class="form-control" id="phone" name="phone" />
+              </div>
+            </div>
           </div>
-          <div class="call-us-box d-flex align-items-center mb-4">
-            <div class="fw-bold text-capitalize me-2">Chat ngay:</div>
-            <a href="https://m.me/leex.dev">
-              <img class="rounded-circle me-2" src="./assets/img/ms.png" alt="" style="width: 36px; height: 36px;">
-            </a>
-            <a href="https://zalo.me/leex.dev">
-              <img class="rounded-circle" src="./assets/img/zalo.png" alt="" style="width: 36px; height: 36px;">
-            </a>
+          <div class="form-group">
+            <label class="fw-bold fs-6 form-label" for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" />
           </div>
-
-          <div class="shipping-box d-flex">
-            <div class="fw-bold text-capitalize me-2">Vận chuyển:</div>
-            <p>Miễn phí giao hoa khu vực TP.HCM</p>
+          <h5 class="m-0 mt-3">Thông tin người nhận</h5>
+          <hr class="mt-2 my-3" />
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="shipping-name">Họ tên:</label>
+                <input type="text" class="form-control" id="shipping-name" name="shipping-name" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="shipping-phone">Điện thoại:</label>
+                <input type="text" class="form-control" id="shipping-phone" name="shipping-phone" />
+              </div>
+            </div>
           </div>
-
-          <form action="" id="form-product" class="d-flex">
-            <input type="text" name="quantity" value="1" size="2" id="input-quantity"
-              class="form-control shadow-none me-2">
-            <button type="button" class="btn btn-warning text-white fw-bold px-4 py-2 me-2">ĐẶT HÀNG</button>
+          <div class="form-group">
+            <label class="fw-bold fs-6 form-label" for="shipping-address">Địa chỉ:</label>
+            <input type="text" class="form-control" id="shipping-address" name="shipping-address" />
+          </div>
+          <div class="row my-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="shipping-province">Tỉnh, thành phố</label>
+                <select class="form-select">
+                  <option disabled>--- Vui lòng chọn ---</option>
+                  <option selected value="1">Tp. Hồ Chí Minh</option>
+                  <option value="2">Hà Nội</option>
+                  <option value="3">Nha Trang</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="fw-bold fs-6 form-label" for="shipping-district">Quận/ Huyện:</label>
+                <select class="form-select">
+                  <option disabled>--- Vui lòng chọn ---</option>
+                  <option selected value="1">Quận 9</option>
+                  <option value="2">Quận 1</option>
+                  <option value="3">Quận 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="fw-bold fs-6 form-label" for="shipping-custom-field">Lời nhắn [Cho người nhận]:</label>
+            <textarea class="form-control" id="shipping-custom-field" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="fw-bold fs-6 form-label" for="shipping-custom-field-for-shop">Yêu cầu, lưu ý [Cho
+              BloomShop]:</label>
+            <textarea class="form-control" id="shipping-custom-field-for-shop" rows="2"></textarea>
+          </div>
+          <label class="fw-bold fs-6" for="shipping-custom-field">Ẩn thông tin</label>
+          <div class="form-check mb-5">
+            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck1">
+              Giấu thông tin người gửi
+            </label>
+          </div>
+        </div>
+        <div class="col-5">
+          <table class="table table-bordered">
+            <h5 class="m-0">Chi tiết đơn hàng</h5>
+            <hr class="mt-2 my-4" />
+            <thead>
+              <tr class="text-center">
+                <th scope="col">Hình ảnh</th>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col">Tổng cộng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center align-middle">
+                <td>
+                  <a href="./detail.html">
+                    <img class="img-thumbnail img-cart-flower" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png"
+                      alt="" />
+                  </a>
+                </td>
+                <td>2 x <a href="./detail.html">Mặt trời của anh</a></td>
+                <td class="text-end">1,080,000VND</td>
+              </tr>
+              <tr class="text-end">
+                <td colspan="2" class="fw-bold">Phí vận chuyển</td>
+                <td>20,000VND</td>
+              </tr>
+              <tr class="text-end">
+                <td colspan="2" class="fw-bold">Tổng cộng</td>
+                <td>1,100,000VND</td>
+              </tr>
+            </tbody>
+          </table>
+          <form>
+            <div class="row">
+              <div class="col-3">
+                <label for="input-coupon" class="col-form-label fw-bold">Mã giảm giá</label>
+              </div>
+              <div class="col-6">
+                <input type="text" name="coupon" value="FC25" placeholder="Mã giảm giá" id="input-coupon"
+                  class="form-control" />
+              </div>
+              <div class="col-3 text-end">
+                <button type="submit" class="btn bg-pink text-white">
+                  Áp dụng
+                </button>
+              </div>
+            </div>
           </form>
 
-          <div class="pdp-featured py-4 row">
-            <div class="pdp-featured-item col-12 col-xl-6 row mb-3 mb-xl-0">
-              <div class="col-3 col-sm-2 col-lg-3">
-                <img src="./assets/img/60mins.png" alt="">
-              </div>
-              <div class="col-9 col-sm-10 col-lg-9">
-                <span>Giao hoa NHANH trong 60 phút</span>
-              </div>
+          <form id="form-payment-method" class="mt-4">
+            <div class="form-check d-flex">
+              <input class="form-check-input my-auto" type="radio" name="flexRadioCheckout" id="pay-wallet" />
+              <label class="form-check-label" for="pay-wallet">
+                <img class="img-fluid ms-1" src="./assets/img/cheque.png" alt="momo"
+                  style="max-width: 48px; max-height: 48px" />
+                Ví điện tử
+                <img class="img-fluid" src="./assets/img/momo.png" alt="momo"
+                  style="max-width: 48px; max-height: 48px" />
+              </label>
             </div>
-            <div class="pdp-featured-item col-12 col-xl-6 row">
-              <div class="col-3 col-sm-2 col-lg-3">
-                <img src="./assets/img/freegifts.png" alt="">
-              </div>
-              <div class="col-9 col-sm-10 col-lg-9">
-                <span>Tặng miễn phí thiệp hoặc banner</span>
-              </div>
+            <div class="form-check d-flex">
+              <input class="form-check-input my-auto" type="radio" name="flexRadioCheckout" id="pay-cod" checked />
+              <label class="form-check-label" for="pay-cod">
+                <img class="img-fluid ms-1" src="./assets/img/cod.png" alt="momo"
+                  style="max-width: 48px; max-height: 48px" />
+                Thanh toán khi giao hàng
+              </label>
             </div>
+          </form>
+          <hr>
+          <div class="col-auto float-end mb-3">
+            <button type="submit" class="btn mb-3 bg-pink text-white">
+              Xác nhận đơn hàng
+            </button>
           </div>
         </div>
       </div>
-
-      <div class="description-flower mt-4">
-        <div class="name fw-bold mb-3">Mô tả sản phẩm</div>
-        <div class="content">
-          Bó hoa Scented Love mang tone hồng chủ đạo với 12 bông hồng tím tương tư sẽ là quà tặng hoàn hảo cho bạn gái trong dịp sinh nhật hoặc lễ tốt nghiệp.
-          <br> 
-          Bó hoa Hân hoan bao gồm:  
-          <br>
-            12 hoa hồng tím tương tư
-        </div>
-      </div>
-
-      <div id="relate-flower">
-        <h4 class="mt-5 mb-4 text-center">Sản phẩm liên quan</h4>
-        <div class="list-product row justify-content-center">
-          <div class="item-product col-md-3 col-6">
-            <div class="image position-relative mb-3">
-              <a href="#">
-                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
-                <span class="percent-off-rounded">9%<br>GIẢM</span>
-              </a>
-            </div>
-            <div class="content">
-              <div class="description">
-                <div class="fw-bold text-center">
-                  <a  href="#">Mặt trời của anh</a>
-                </div>
-                <div class="price text-center fw-bold p-2">
-                  <span class="price-new">300,000VND</span>
-                  <span class="price-old">330,000VND</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item-product col-md-3 col-6 mb-4">
-            <div class="image position-relative mb-3">
-              <a href="#">
-                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
-                <span class="percent-off-rounded">9%<br>GIẢM</span>
-              </a>
-            </div>
-            <div class="content">
-              <div class="description">
-                <div class="fw-bold text-center">
-                  <a  href="#">Mặt trời của anh</a>
-                </div>
-                <div class="price text-center fw-bold p-2">
-                  <span class="price-new">300,000VND</span>
-                  <span class="price-old">330,000VND</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item-product col-md-3 col-6 mb-4">
-            <div class="image position-relative mb-3">
-              <a href="#">
-                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
-                <span class="percent-off-rounded">9%<br>GIẢM</span>
-              </a>
-            </div>
-            <div class="content">
-              <div class="description">
-                <div class="fw-bold text-center">
-                  <a  href="#">Mặt trời của anh</a>
-                </div>
-                <div class="price text-center fw-bold p-2">
-                  <span class="price-new">300,000VND</span>
-                  <span class="price-old">330,000VND</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item-product col-md-3 col-6 mb-4">
-            <div class="image position-relative mb-3">
-              <a href="#">
-                <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
-                <span class="percent-off-rounded">9%<br>GIẢM</span>
-              </a>
-            </div>
-            <div class="content">
-              <div class="description">
-                <div class="fw-bold text-center">
-                  <a  href="#">Mặt trời của anh</a>
-                </div>
-                <div class="price text-center fw-bold p-2">
-                  <span class="price-new">300,000VND</span>
-                  <span class="price-old">330,000VND</span>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </form>
   </div>
 
   <div id="footer">
     <footer class="text-center text-lg-start text-white" style="background-color: #252525">
       <section class="pt-5">
         <div class="container text-center text-md-start">
-          <div class="row ">
+          <div class="row">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold">Bloom Flower</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
-                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều mẫu mã đa dạng chất lượng hoa tốt đến khách
-                hàng
+                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều
+                mẫu mã đa dạng chất lượng hoa tốt đến khách hàng
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -485,8 +413,13 @@
               <h6 class="text-uppercase fw-bold">Thông tin liên hệ</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px" />
-              <p><i class="fas fa-home mr-3"></i> District 9, HoChiMinh City, VietNam</p>
-              <p><i class="fas fa-envelope mr-3"></i> BloomFlower@gmail.com</p>
+              <p>
+                <i class="fas fa-home mr-3"></i> District 9, HoChiMinh City,
+                VietNam
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> BloomFlower@gmail.com
+              </p>
               <p><i class="fas fa-phone mr-3"></i> + 84 797 797 979</p>
               <section class="text-center mb-5">
                 <a href="https://facebook.com/leex.dev" class="text-white me-4">
@@ -498,7 +431,7 @@
                 <a href="https://www.linkedin.com/in/lee-nguyen-092194259/" class="text-white me-4">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/leexdev" class="text-white ">
+                <a href="https://github.com/leexdev" class="text-white">
                   <i class="fab fa-github"></i>
                 </a>
               </section>
