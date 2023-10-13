@@ -1,5 +1,6 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
@@ -39,6 +40,10 @@ body {
   padding-top: 110px;
 }
 
+.list-product {
+  
+}
+
 .percent-off-rounded {
   position: absolute;
   right: 5px;
@@ -66,7 +71,6 @@ body {
 .item-product {
   max-width: 271px;
 }
-
 
 .price-new {
   color: #f50101;

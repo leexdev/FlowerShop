@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/homepage.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -28,6 +26,12 @@
         </div>
         <div class="nav float-end">
           <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="./cart.html" id="test-js" title="Giỏ hàng" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                <i class="fa-solid fa-user"></i>
+                <span class="d-none d-md-inline">Đăng nhập</span>
+              </a>
+            </li>
             <li class="list-inline-item">
               <a href="./cart.html" title="Giỏ hàng">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -49,11 +53,11 @@
         <a class="navbar-brand" href="./index.html">
           <img src="./assets/img/logo-bloom.png" alt="Logo" style="width: 120px">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Trang chủ</a>
@@ -67,9 +71,9 @@
                 Sản phẩm
               </a>
               <ul class="dropdown-menu bg-milk">
-                <li><a class="dropdown-item" href="#">Hoa sinh nhật</a></li>
-                <li><a class="dropdown-item" href="#">Hoa sang trọng</a></li>
-                <li><a class="dropdown-item" href="#">Hoa sáp</a></li>
+                <li><a class="dropdown-item" href="./category.html">Hoa sinh nhật</a></li>
+                <li><a class="dropdown-item" href="./category.html">Hoa sang trọng</a></li>
+                <li><a class="dropdown-item" href="./category.html">Hoa sáp</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -82,8 +86,14 @@
           <form class="d-flex mb-3 mb-md-0">
             <input class="border border-3 border-top-0 border-start-0 border-end-0 bg-milk" type="search"
               placeholder="Tìm kiếm sản phẩm..." aria-label="Search" style=" outline: none;">
-            <button class="btn btn-primary bg-pink shadow-none border-0" type="submit">Tìm kiếm </button>
-            <button type="button" class="btn shadow-none position-relative ms-3 bg-milk d-none d-lg-block">
+            <a class="bg-pink text-white rounded-1 p-2 d-flex align-items-center" href="./search.html">Tìm kiếm</a>
+            <a class="d-md-none p-2 position-relative" href="./cart.html">
+              <i class="fa-solid fa-cart-shopping fs-4 text-pink"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                1
+              </span>
+            </a>
+            <button type="button" class="btn shadow-none position-relative ms-3 bg-milk d-none d-md-block">
               <div class="dropdown">
                 <a class="dropdown-header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-cart-shopping fs-4 text-pink"></i>
@@ -95,14 +105,14 @@
                   <table class="table" style="min-width: 500px;">
                     <tbody>
                       <tr>
-                        <td class="text-center" style="width: 100px;">
-                          <a href="#">
+                        <td class="text-center">
+                          <a href="./detail.html">
                             <img class="img-thumbnail img-cart-flower"
                               src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                           </a>
                         </td>
                         <td class="align-middle text-center">
-                          <a href="#">
+                          <a href="./detail.html">
                             Mặt trời của anh
                           </a>
                         </td>
@@ -119,14 +129,14 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="text-center" style="width: 100px;">
-                          <a href="#">
+                        <td class="text-center">
+                          <a href="./detail.html">
                             <img class="img-thumbnail img-cart-flower"
                               src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                           </a>
                         </td>
                         <td class="align-middle text-center">
-                          <a href="#">
+                          <a href="./detail.html">
                             Mặt trời của anh
                           </a>
                         </td>
@@ -142,32 +152,6 @@
                           </button>
                         </td>
                       </tr>
-
-                      <tr>
-                        <td class="text-center" style="width: 100px;">
-                          <a href="#">
-                            <img class="img-thumbnail img-cart-flower"
-                              src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
-                          </a>
-                        </td>
-                        <td class="align-middle text-center">
-                          <a href="#">
-                            Mặt trời của anh
-                          </a>
-                        </td>
-                        <td class="text-center align-middle">
-                          x2
-                        </td>
-                        <td class="text-center align-middle">
-                          1,080,000VND
-                        </td>
-                        <td class="text-start align-middle">
-                          <button class="text-white bg-pink border-0 py-2 px-3 rounded-2">
-                            <i class="fa-solid fa-xmark"></i>
-                          </button>
-                        </td>
-                      </tr>
-
                       <tr>
                         <td class="fw-bold text-end" colspan="3">
                           Tổng cộng
@@ -225,7 +209,7 @@
 
       <div id="discount-flower">
         <h4 class="mt-5 mb-4 text-center">ĐANG GIẢM GIÁ</h4>
-        <div class="list-product row d-flex justify-content-center">
+        <div class="list-product row justify-content-center">
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
               <a href="./detail.html">
@@ -243,7 +227,7 @@
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
+                  <div class="btn bg-pink d-block p-1 w-60">
                     <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
@@ -253,7 +237,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -261,15 +245,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class="text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -278,7 +262,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -286,15 +270,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -303,7 +287,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -311,15 +295,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -355,10 +339,10 @@
 
       <div id="hot-flower">
         <h4 class="mt-5 mb-4 text-center">ĐẶT NHIỀU NHẤT</h4>
-        <div class="list-product row d-flex justify-content-center">
+        <div class="list-product row justify-content-center">
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -366,15 +350,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -383,7 +367,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -391,15 +375,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -408,7 +392,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -416,15 +400,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -433,7 +417,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -441,15 +425,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -458,7 +442,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -466,15 +450,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -483,7 +467,7 @@
 
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -491,15 +475,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -507,7 +491,7 @@
           </div>
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -515,15 +499,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -531,7 +515,7 @@
           </div>
           <div class="item-product col-md-3 col-6 mb-4">
             <div class="image position-relative mb-3">
-              <a href="#">
+              <a href="./detail.html">
                 <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                 <span class="percent-off-rounded">9%<br>GIẢM</span>
               </a>
@@ -539,15 +523,15 @@
             <div class="content">
               <div class="description">
                 <div class="fw-bold text-center">
-                  <a href="#">Mặt trời của anh</a>
+                  <a href="./detail.html">Mặt trời của anh</a>
                 </div>
                 <div class="price text-center fw-bold p-2">
                   <span class="price-new">300,000VND</span>
                   <span class="price-old">330,000VND</span>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="btn bg-pink d-block p-1 w-50">
-                    <a class=" text-white rounded" href="#">Đặt hàng</a>
+                  <div class="btn bg-pink d-block p-1 w-60">
+                    <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                   </div>
                 </div>
               </div>
@@ -556,10 +540,10 @@
         </div>
         <div id="opengrand-flower">
           <h4 class="mt-5 mb-4 text-center">HOA KHAI TRƯƠNG</h4>
-          <div class="list-product row d-flex justify-content-center">
+          <div class="list-product row justify-content-center">
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -567,15 +551,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -584,7 +568,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -592,15 +576,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -609,7 +593,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -617,15 +601,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -634,7 +618,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -642,15 +626,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -661,10 +645,10 @@
 
         <div id="birthday-flower">
           <h4 class="mt-5 mb-4 text-center">HOA SINH NHẬT</h4>
-          <div class="list-product row d-flex justify-content-center">
+          <div class="list-product row justify-content-center">
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -672,15 +656,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -689,7 +673,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -697,15 +681,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -714,7 +698,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -722,15 +706,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -739,7 +723,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -747,15 +731,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -766,10 +750,10 @@
 
         <div id="funeral-flower">
           <h4 class="mt-5 mb-4 text-center">HOA TANG LỄ</h4>
-          <div class="list-product row d-flex justify-content-center">
+          <div class="list-product row justify-content-center">
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -777,15 +761,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -794,7 +778,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -802,15 +786,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -819,7 +803,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -827,15 +811,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -844,7 +828,7 @@
 
             <div class="item-product col-md-3 col-6 mb-4">
               <div class="image position-relative mb-3">
-                <a href="#">
+                <a href="./detail.html">
                   <img class="img-fluid" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png" alt="">
                   <span class="percent-off-rounded">9%<br>GIẢM</span>
                 </a>
@@ -852,15 +836,15 @@
               <div class="content">
                 <div class="description">
                   <div class="fw-bold text-center">
-                    <a href="#">Mặt trời của anh</a>
+                    <a href="./detail.html">Mặt trời của anh</a>
                   </div>
                   <div class="price text-center fw-bold p-2">
                     <span class="price-new">300,000VND</span>
                     <span class="price-old">330,000VND</span>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="btn bg-pink d-block p-1 w-50">
-                      <a class=" text-white rounded" href="#">Đặt hàng</a>
+                    <div class="btn bg-pink d-block p-1 w-60">
+                      <a class="text-white rounded" href="./detail.html">Đặt hàng</a>
                     </div>
                   </div>
                 </div>
@@ -1065,7 +1049,96 @@
       </section>
     </footer>
   </div>
+
+  <!-- handle login start -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true"
+    style="margin-top: 100px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold mt-3" id="LoginModalLabel" style="margin-left: 180px;">Đăng nhập</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check p-0">
+              <a href="#" class="form-check-label text-decoration-none text-pink fs-7 fw-bold" for="exampleCheck1">Quên
+                mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng nhập</button>
+            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn chưa là thành viên?
+              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
+                data-bs-toggle="modal" data-bs-target="#RegisterModal">
+                Đăng ký ngay
+              </button>
+            </div>
+            <div class="row my-3">
+              <div class="col-6">
+                <button type="button"
+                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
+                    class="fa-brands fa-facebook text-primary me-2 fs-5"></i>Facebook</button>
+              </div>
+              <div class="col-6">
+                <button type="button"
+                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
+                    class="fa-brands fa-google text-danger me-2 fs-5"></i>Google</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- handle login end -->
+
+  <!-- handle register start -->
+  <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true"
+    style="margin-top: 100px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold mt-3" id="RegisterModalLabel" style="margin-left: 180px;">Đăng ký</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Nhập lại mật khẩu</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng ký</button>
+            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn đã có tài khoản?
+              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
+                data-bs-toggle="modal" data-bs-target="#LoginModal">
+                Đăng nhập
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- handle register end -->
+
+
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
