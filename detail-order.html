@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -188,49 +187,128 @@
         </nav>
     </div>
 
-    <div id="content" style="min-height: 500px;">
+    <div id="content" style="min-height: 00px;">
         <div class="container">
-            <div class="row mt-3">
+            <div class="row my-3">
                 <div class="col-md-9">
-                    <h5 class="m-0 fw-bold">Thông tin tài khoản của tôi</h5>
-                    <hr class="my-2">
-                    <form class="form-customer ms-0 ms-md-5 mt-3">
-                        <div class="form-group row align-items-center">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-name">Họ tên:</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="customer-name" name="customer-name" placeholder="Họ tên"/>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center my-2">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-email">Email:</label>
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="customer-email" name="customer-email" placeholder="Email"/>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-phone">Điện thoại:</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="customer-phone" name="customer-phone" placeholder="Điện thoại"/>
-                            </div>
-                        </div>
-                    </form>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td colspan="2">Chi tiết đơn hàng</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">
+                                    <b>ID đặt hàng: </b>
+                                    #412121
+                                    <br>
+                                    <b>Ngày thêm: </b>
+                                    13/10/2023
+                                </td>
 
-                    <div class="button-select mt-4">
-                        <a class="text-white bg-secondary px-3 py-2 rounded-3 float-start" href="./account.html">Quay lại</a>
+                                <td class="w-50">
+                                    <b>Phương thức thanh toán: </b>
+                                    Chuyển khoản ngân hàng
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td>Địa chỉ thanh toán</td>
+                                <td>Địa chỉ giao hàng</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">
+
+                                </td>
+
+                                <td class="w-50">
+                                    Quận 9, Tp. Hồ Chí Minh
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="overflow-hidden">
+                        <div class="overflow-auto">
+
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>Tên sản phẩm</td>
+                                        <td class="text-end">Số lượng</td>
+                                        <td class="text-end">Giá bán</td>
+                                        <td class="text-end">Tổng cộng</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mãi bên nhau</td>
+                                        <td class="text-end">1</td>
+                                        <td class="text-end">570,000VND</td>
+                                        <td class="text-end">570,000VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phút đầu tiên</td>
+                                        <td class="text-end">2</td>
+                                        <td class="text-end">700,000VND</td>
+                                        <td class="text-end">1,400,000VND</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td class="fw-bold text-end">Phí vận chuyển</td>
+                                        <td class="text-end">0VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td class="fw-bold text-end">Tổng cộng</td>
+                                        <td class="text-end">1,620,000VND</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mt-3">Lịch sử đơn hàng</h5>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td>Ngày thêm</td>
+                                <td>Trạng thái</td>
+                                <td>Nội dung</td>
+                            </tr>
+                        </thead>        
+                        <tbody>
+                            <tr>
+                                <td>13 / 10 / 2023</td>
+                                <td>Đang xử lý</td>
+                                <td>Đơn đặt hàng của bạn sẽ không được giao cho đến khi chúng tôi nhận được thanh toán.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div class="button-select">
+                        <a class="text-white bg-secondary px-3 py-2 rounded-3 float-start" href="./account.html">Quay
+                            lại</a>
                         <a class="text-white bg-pink px-3 py-2 rounded-3 float-end" href="./account.html">Tiếp tục</a>
                     </div>
                 </div>
 
                 <div class="col-md-3 d-none d-md-block">
                     <div class="list-group mb-3">
-                        <a href="./account.html"
-                            class="list-group-item">Tài khoản của tôi</a>
-                        <a href="./edit-customer.html"
-                            class="list-group-item">Chỉnh sửa tài khoản</a> 
-                        <a href="./changepassword.html"
-                            class="list-group-item">Mật khẩu</a>
-                        <a href="./"
-                            class="list-group-item">Lịch sử đơn hàng</a>
+                        <a href="!#" class="list-group-item">Tài khoản của tôi</a>
+                        <a href="" class="list-group-item">Chỉnh sửa tài khoản</a>
+                        <a href="" class="list-group-item">Mật khẩu</a>
+                        <a href="" class="list-group-item">Lịch sử đơn hàng</a>
                         <a href="" class="list-group-item">Đăng xuất</a>
                     </div>
                 </div>

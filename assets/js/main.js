@@ -9,3 +9,17 @@ document.addEventListener("click", function(event) {
     collapseMenu.classList.remove("show");
   }
 });
+
+const toastTriggers = document.querySelectorAll('.liveToastBtn');
+const toastLiveExample = document.querySelector('.liveToast');
+
+if (toastTriggers.length > 0) {
+  toastTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+      toastBootstrap.show();
+    });
+  });
+}
+
+

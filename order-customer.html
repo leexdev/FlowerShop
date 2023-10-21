@@ -18,7 +18,7 @@
     <div id="header" class="bg-milk">
         <nav id="top" class="p-2">
             <div class="container">
-                <div class="nav float-start">
+                <div class="nav float-start d-none d-sm-block">
                     <ul class="list-inline">
                         <li class="list-inline-item">HOTLINE: <a href="tel:1900633045">1900 797 797 </a> | <a
                                 href="tel:0865 160 360">0797 797 979</a></li>
@@ -192,45 +192,70 @@
         <div class="container">
             <div class="row mt-3">
                 <div class="col-md-9">
-                    <h5 class="m-0 fw-bold">Thông tin tài khoản của tôi</h5>
+                    <h5 class="fw-bold">Lịch sử đơn hàng</h5>
                     <hr class="my-2">
-                    <form class="form-customer ms-0 ms-md-5 mt-3">
-                        <div class="form-group row align-items-center">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-name">Họ tên:</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="customer-name" name="customer-name" placeholder="Họ tên"/>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center my-2">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-email">Email:</label>
-                            <div class="col-md-10">
-                                <input type="email" class="form-control" id="customer-email" name="customer-email" placeholder="Email"/>
-                            </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                            <label class="fw-bold fs-6 form-label col-md-2" for="customer-phone">Điện thoại:</label>
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" id="customer-phone" name="customer-phone" placeholder="Điện thoại"/>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="overflow-auto">
+                        <table class="table table-bordered table-hover text-center">
+                            <thead>
+                                <tr>
+                                    <td>ID đặt hàng</td>
+                                    <td>Khách hàng</td>
+                                    <td>Số lượng</td>
+                                    <td>Trạng thái</td>
+                                    <td>Tổng cộng</td>
+                                    <td>Ngày thêm</td>
+                                    <td></td>
+                                </tr>                          
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#4047365</td>
+                                    <td>Nguyễn Minh Phúc</td>
+                                    <td>3</td>
+                                    <td>Đang xử lý</td>
+                                    <td>1,620,000VND</td>
+                                    <td>13/10/2023</td>
+                                    <td>
+                                        <a class="p-2 bg-pink rounded-2" href="./detail-order" title="Chi tiết đơn hàng">
+                                            <i class="fa-solid fa-circle-info text-white"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td>#4047365</td>
+                                    <td>Nguyễn Minh Phúc</td>
+                                    <td>3</td>
+                                    <td>Đang xử lý</td>
+                                    <td>1,620,000VND</td>
+                                    <td>13/10/2023</td>
+                                    <td>
+                                        <a class="p-2 bg-pink rounded-2" href="./detail-order" title="Lượt xem">
+                                            <i class="fa-solid fa-circle-info text-white"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                    <div class="button-select mt-4">
-                        <a class="text-white bg-secondary px-3 py-2 rounded-3 float-start" href="./account.html">Quay lại</a>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6 text-end">
+                            Hiển thị từ 1 đến 1 / 1 (1 Trang)
+                        </div>
+                    </div>
+                    <div class="button-select mt-2">
                         <a class="text-white bg-pink px-3 py-2 rounded-3 float-end" href="./account.html">Tiếp tục</a>
                     </div>
                 </div>
 
                 <div class="col-md-3 d-none d-md-block">
                     <div class="list-group mb-3">
-                        <a href="./account.html"
-                            class="list-group-item">Tài khoản của tôi</a>
-                        <a href="./edit-customer.html"
-                            class="list-group-item">Chỉnh sửa tài khoản</a> 
-                        <a href="./changepassword.html"
-                            class="list-group-item">Mật khẩu</a>
-                        <a href="./"
-                            class="list-group-item">Lịch sử đơn hàng</a>
+                        <a href="!#" class="list-group-item">Tài khoản của tôi</a>
+                        <a href="" class="list-group-item">Chỉnh sửa tài khoản</a>
+                        <a href="" class="list-group-item">Mật khẩu</a>
+                        <a href="" class="list-group-item">Lịch sử đơn hàng</a>
                         <a href="" class="list-group-item">Đăng xuất</a>
                     </div>
                 </div>

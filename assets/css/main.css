@@ -40,10 +40,6 @@ body {
   padding-top: 110px;
 }
 
-.list-product {
-  
-}
-
 .percent-off-rounded {
   position: absolute;
   right: 5px;
@@ -60,12 +56,22 @@ body {
   text-align: center;
 }
 
-#content .image {
-  transition: transform 0.3s ease;
+#content .image,
+#contact-info .contact-info-item {
+  transition: transform 0.2s ease;
 }
 
-#content .image:hover {
+#contact-info img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+#content .image:hover{
   transform: scale(1.02);
+}
+
+#contact-info .contact-info-item:hover {
+  transform: scale(1.22);
 }
 
 .item-product {
