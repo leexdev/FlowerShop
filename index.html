@@ -26,10 +26,16 @@
         <div class="nav float-end">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="./cart.html" id="test-js" title="Giỏ hàng" data-bs-toggle="modal" data-bs-target="#LoginModal">
-                <i class="fa-solid fa-user"></i>
-                <span class="d-none d-md-inline">Đăng nhập</span>
-              </a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="d-none d-md-inline">Tài khoản</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./register.html">Đăng ký</a></li>
+                  <li><a class="dropdown-item" href="./login.html">Đăng nhập</a></li>
+                </ul>
+              </div>
             </li>
             <li class="list-inline-item">
               <a href="./cart.html" title="Giỏ hàng">
@@ -1049,92 +1055,6 @@
     </footer>
   </div>
 
-  <!-- handle login start -->
-  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true"
-    style="margin-top: 100px">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold mt-3 ms-auto" id="LoginModalLabel">Đăng nhập</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check p-0">
-              <a href="#" class="form-check-label text-decoration-none text-pink fs-7 fw-bold" for="exampleCheck1">Quên
-                mật khẩu?</a>
-            </div>
-            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng nhập</button>
-            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn chưa là thành viên?
-              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
-                data-bs-toggle="modal" data-bs-target="#RegisterModal">
-                Đăng ký ngay
-              </button>
-            </div>
-            <div class="row my-3">
-              <div class="col-6">
-                <button type="button"
-                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
-                    class="fa-brands fa-facebook text-primary me-2 fs-5"></i>Facebook</button>
-              </div>
-              <div class="col-6">
-                <button type="button"
-                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
-                    class="fa-brands fa-google text-danger me-2 fs-5"></i>Google</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- handle login end -->
-
-  <!-- handle register start -->
-  <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true"
-    style="margin-top: 100px">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold mt-3 ms-auto" id="RegisterModalLabel" style="margin-left: 180px;">Đăng ký</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Nhập lại mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng ký</button>
-            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn đã có tài khoản?
-              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
-                data-bs-toggle="modal" data-bs-target="#LoginModal">
-                Đăng nhập
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- handle register end -->
-
   <div class="position-fixed bottom-0 end-0 m-2 m-md-4" style="z-index: 1;">
     <div id="contact-info">
         <div>
@@ -1160,8 +1080,6 @@
         </div>
     </div>
   </div>
-  <button type="button" class="btn btn-primary liveToastBtn">Show live toast</button>
-
 
   <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 90px; z-index: 1">
     <div class="toast liveToast align-items-center">

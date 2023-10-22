@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+.bg-green {
+  background-color: #198754;
+}
+
 #top {
   background-color: transparent;
   border-bottom: 1px solid #e2e2e2;

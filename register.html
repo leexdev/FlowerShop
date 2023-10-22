@@ -26,10 +26,16 @@
         <div class="nav float-end">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="./cart.html" id="test-js" title="Giỏ hàng" data-bs-toggle="modal" data-bs-target="#LoginModal">
-                <i class="fa-solid fa-user"></i>
-                <span class="d-none d-md-inline">Đăng nhập</span>
-              </a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="d-none d-md-inline">Tài khoản</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./register.html">Đăng ký</a></li>
+                  <li><a class="dropdown-item" href="./login.html">Đăng nhập</a></li>
+                </ul>
+              </div>
             </li>
             <li class="list-inline-item">
               <a href="./cart.html" title="Giỏ hàng">
@@ -100,7 +106,7 @@
                     1
                   </span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end py-3 table-cart-flower" style="background-color: #eee;">
+                <ul class="dropdown-menu dropdown-menu-end table-cart-flower">
                   <table class="table" style="min-width: 500px;">
                     <tbody>
                       <tr>
@@ -122,7 +128,7 @@
                           1,080,000VND
                         </td>
                         <td class="text-start align-middle">
-                          <button class="text-white bg-pink border-0 py-2 px-3 rounded-2">
+                          <button type="button" class="text-white bg-pink border-0 py-2 px-3 rounded-2 liveToastBtn">
                             <i class="fa-solid fa-xmark"></i>
                           </button>
                         </td>
@@ -146,7 +152,7 @@
                           1,080,000VND
                         </td>
                         <td class="text-start align-middle">
-                          <button class="text-white bg-pink border-0 py-2 px-3 rounded-2">
+                          <button type="button" class="text-white bg-pink border-0 py-2 px-3 rounded-2 liveToastBtn">
                             <i class="fa-solid fa-xmark"></i>
                           </button>
                         </td>
@@ -182,104 +188,64 @@
     </nav>
   </div>
 
-  <div id="content" class="my-5">
+  <div id="content" style="min-height: 600px;">
     <div class="container">
-      <div class="overflow-auto">
-        <table class="table table-bordered">
-          <thead>
-            <tr class="text-center">
-              <th>Hình ảnh</th>
-              <th>Tên sản phẩm</th>
-              <th>Số lượng</th>
-              <th>Đơn giá</th>
-              <th>Tổng cộng</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="text-center align-middle">
-              <td>
-                <a href="./detail.html">
-                  <img class="img-thumbnail img-cart-flower" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png"
-                    alt="" />
-                </a>
-              </td>
-              <td class="text-danger">
-                <a href="./detail.html"> Mãi bên nhau </a>
-              </td>
-              <td>
-                <div class="d-flex justify-content-center">
-                  <input class="form-control w-auto" min="1" max="99" type="number" name="quantity" class="quantity-flower" />
-                  <button class="btn bg-green shadow-none"> 
-                    <i class="fa-solid fa-rotate text-white"></i>
-                  </button>
-                  <button class="btn bg-pink shadow-none"> 
-                    <i class="fa-solid fa-x text-white"></i>
-                  </button>
+        <div class="row mt-3">
+            <div class="col-md-9">
+                <h4 class="fw-bold">Đăng ký tài khoản</h4>
+                <span>Nếu bạn đã có tài khoản với chúng tôi, vui lòng đăng nhập tại <a class="text-danger" href="./login.html">trang đăng nhập </a> .</span>
+                <h5 class="mt-3">Thông tin cá nhân của bạn</h5>
+                <hr class="mt-0 mb-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Họ tên</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Nhập lại mật khẩu</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-danger text-white w-100 mb-3">Đăng ký</button>
+                  </form>
+            </div>
+
+            <div class="col-md-3 d-none d-md-block">
+                <div class="list-group mb-3">
+                    <a href="./account.html"
+                        class="list-group-item">Tài khoản của tôi</a>
+                    <a href="./edit-customer.html"
+                        class="list-group-item">Chỉnh sửa tài khoản</a> 
+                    <a href="./changepassword.html"
+                        class="list-group-item">Mật khẩu</a>
+                    <a href="./"
+                        class="list-group-item">Lịch sử đơn hàng</a>
+                    <a href="" class="list-group-item">Đăng xuất</a>
                 </div>
-              </td>
-              <td class="text-end">540,000VND</td>
-              <td class="text-end">1080,000VND</td>
-            </tr>
-            <tr class="text-center align-middle">
-              <td>
-                <a href="./detail.html">
-                  <img class="img-thumbnail img-cart-flower" src="./assets/img/mat-troi-cua-anh-271x271.jpg.png"
-                    alt="" />
-                </a>
-              </td>
-              <td class="text-danger">
-                <a href="./index.html"> Mãi bên nhau </a>
-              </td>
-              <td>
-                <div class="d-flex justify-content-center">
-                  <input class="form-control w-auto" min="1" max="99" type="number" name="quantity" class="quantity-flower" />
-                  <button class="btn bg-green shadow-none"> 
-                    <i class="fa-solid fa-rotate text-white"></i>
-                  </button>
-                  <button class="btn bg-pink shadow-none"> 
-                    <i class="fa-solid fa-x text-white"></i>
-                  </button>
-                </div>
-              </td>
-              <td class="text-end">540,000VND</td>
-              <td class="text-end">1,080,000VND</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="4" class="text-end fw-bold">Tổng cộng</td>
-              <td class="text-end">1,080,000VND</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-      <div class="d-inline-block pt-2 pd-2 w-100">
-        <div class="float-start">
-          <a href="./index.html" class="btn shadow-none btn-secondary">
-            Tiếp tục mua sắm
-          </a>
+            </div>
         </div>
-        <div class="float-end">
-          <a href="./checkout.html" class="btn shadow-none bg-pink text-white">
-            Thanh toán
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <div id="footer">
     <footer class="text-center text-lg-start text-white" style="background-color: #252525">
       <section class="pt-5">
         <div class="container text-center text-md-start">
-          <div class="row">
+          <div class="row ">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold">Bloom Flower</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
-                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều
-                mẫu mã đa dạng chất lượng hoa tốt đến khách hàng
+                Shop hoa tươi chất lượng chúng tôi mong muốn mang đến nhiều mẫu mã đa dạng chất lượng hoa tốt đến khách
+                hàng
               </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -317,13 +283,8 @@
               <h6 class="text-uppercase fw-bold">Thông tin liên hệ</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px" />
-              <p>
-                <i class="fas fa-home mr-3"></i> District 9, HoChiMinh City,
-                VietNam
-              </p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> BloomFlower@gmail.com
-              </p>
+              <p><i class="fas fa-home mr-3"></i> District 9, HoChiMinh City, VietNam</p>
+              <p><i class="fas fa-envelope mr-3"></i> BloomFlower@gmail.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 84 797 797 979</p>
               <section class="text-center mb-5">
                 <a href="https://facebook.com/leex.dev" class="text-white me-4">
@@ -335,7 +296,7 @@
                 <a href="https://www.linkedin.com/in/lee-nguyen-092194259/" class="text-white me-4">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/leexdev" class="text-white">
+                <a href="https://github.com/leexdev" class="text-white ">
                   <i class="fab fa-github"></i>
                 </a>
               </section>
@@ -345,92 +306,46 @@
       </section>
     </footer>
   </div>
-  <!-- handle login start -->
-  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true"
-    style="margin-top: 100px">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold mt-3" id="LoginModalLabel" style="margin-left: 180px;">Đăng nhập</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check p-0">
-              <a href="#" class="form-check-label text-decoration-none text-pink fs-7 fw-bold" for="exampleCheck1">Quên
-                mật khẩu?</a>
-            </div>
-            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng nhập</button>
-            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn chưa là thành viên?
-              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
-                data-bs-toggle="modal" data-bs-target="#RegisterModal">
-                Đăng ký ngay
-              </button>
-            </div>
-            <div class="row my-3">
-              <div class="col-6">
-                <button type="button"
-                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
-                    class="fa-brands fa-facebook text-primary me-2 fs-5"></i>Facebook</button>
-              </div>
-              <div class="col-6">
-                <button type="button"
-                  class="btn btn-outline-success text-body fs-7 fw-bold d-flex justify-content-center align-items-center w-100"><i
-                    class="fa-brands fa-google text-danger me-2 fs-5"></i>Google</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- handle login end -->
 
-  <!-- handle register start -->
-  <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true"
-    style="margin-top: 100px">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold mt-3" id="RegisterModalLabel" style="margin-left: 180px;">Đăng ký</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="position-fixed bottom-0 end-0 m-2 m-md-4" style="z-index: 1;">
+    <div id="contact-info">
+        <div>
+          <a href="https://m.me/leex.dev">
+            <div class="p-2 bg-body contact-info-item border rounded-circle ">
+              <img src="./assets/img/ms.png" alt="">
+            </div>
+          </a>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label fw-bold text-secondary">Địa chỉ Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="my-3">
+          <a href="https://zalo.me/0337378867">
+            <div class="p-2 bg-body contact-info-item border rounded-circle ">
+              <img src="./assets/img/zalo.png" alt="">
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label fw-bold text-secondary">Nhập lại mật khẩu</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn text-white w-100 py-3 bg-pink">Đăng ký</button>
-            <div class="mt-3 text-center fs-6 d-flex justify-content-center align-items-center">Bạn đã có tài khoản?
-              <button type="button" class="fs-6 text-decoration-underline fw-bold text-pink p-1 border-0 bg-body"
-                data-bs-toggle="modal" data-bs-target="#LoginModal">
-                Đăng nhập
-              </button>
-            </div>
-          </form>
+          </a>
         </div>
+        <div>
+          <a href="tel:0337378867">
+            <div class="p-2 bg-body contact-info-item border rounded-circle ">
+              <img src="./assets/img/phone.png" alt="">
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 90px; z-index: 1">
+    <div class="toast liveToast align-items-center">
+      <div class="d-flex bg-success">
+        <div class="toast-body">
+          Xóa khỏi giỏ hàng thành công
+        </div>
+        <button type="button" class="btn-close me-2 m-auto shadow-none" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
   </div>
-  <!-- handle register end -->
+
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
